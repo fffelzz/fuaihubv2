@@ -1,0 +1,251 @@
+if game.PlaceId == 2202352383 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/fffelzz/Guis/main/guim"))()
+    local Window = Library.CreateLib("FuaiHub", "Sentinel")
+
+    local info = Window:NewTab("Info")
+    local localPlayer = Window:NewTab("LocalPlayer")
+    local training = Window:NewTab("Training")
+    local admin = Window:NewTab("Admin")
+    local free = Window:NewTab("Free (Premium)")
+    local infoSection = info:NewSection("Info")
+    local infoSection = info:NewSection("kirilka10012005 UISetting,Scripter")
+    local infoSection = info:NewSection("Lover_spaseq Tester,Scripter")
+    local infoSection = info:NewSection("Discord link (Update Script) https://discord.gg/hF3g5q5x")
+    local localPlayerSection = localPlayer:NewSection("LocalPlayer")
+    local trainingSection = training:NewSection("Training")
+    local adminSection = admin:NewSection("Admin")
+    local freeSection = free:NewSection("Free (Premium)")
+    
+    local localPlayerButton = localPlayerSection:NewButton("RGB Rank On",  UISetting, function()
+    	    _G.on = 1
+    while _G.on == 1
+    do
+                game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",1})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",2})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",3})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",4})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",5})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",6})
+        wait(0,5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",7})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",8})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",9})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",10})
+        wait(0.5)
+    end
+    end)
+
+    local localPlayerButton = localPlayerSection:NewButton("RGB Rank Off",  UISetting, function()
+    	  _G.on = 0
+    while _G.on == 1
+    do
+                game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",1})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",2})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",3})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",4})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",5})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",6})
+        wait(0,5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",7})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",8})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",9})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"ChangeRankEmblem",10})
+        wait(0.5)
+    end
+    end)
+
+    local localPlayerButton = localPlayerSection:NewButton("Save Rank",  UISetting, function()
+        game.Players.LocalPlayer.Character.Head.NameBbGui:remove()
+        end)
+    local localPlayerButton = localPlayerSection:NewButton("Rgb Weight Lspeed On",  UISetting, function()
+       	_G.on = 1
+    while _G.on == 1
+    do
+    	game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight1"})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight2"})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight3"})
+        wait(0.5)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight4"})
+        wait(0.5)
+        end
+    	end)
+        local localPlayerButton = localPlayerSection:NewButton("Rgb Weight Lspeed Off",  UISetting, function()
+       	_G.on = 0
+    while _G.on == 1
+    do
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight1"})
+        wait(1)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight2"})
+        wait(1)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight3"})
+        wait(1)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight4"})
+        wait(1)
+    		end
+        end)
+ 	local trainingButton = trainingSection:NewButton("Fist 1M+",  UISetting, function()
+ 	           _G.on = 1
+    while _G.on == 1
+    do game:GetService("RunService").RenderStepped:wait()
+        
+        game.ReplicatedStorage.RemoteEvent:FireServer({"+FS3"})
+        game:GetService("RunService").RenderStepped:wait()
+end
+ 	    end)
+ 	local trainingButton = trainingSection:NewButton("Fist 1B+",  UISetting, function()
+ 	           _G.on = 1
+    while _G.on == 1
+    do game:GetService("RunService").RenderStepped:wait()
+        
+        game.ReplicatedStorage.RemoteEvent:FireServer({"+FS4"})
+        game:GetService("RunService").RenderStepped:wait()
+end
+ 	    end)
+ 	local trainingButton = trainingSection:NewButton("Fist 100B+",  UISetting, function()
+ 	           _G.on = 1
+    while _G.on == 1
+    do game:GetService("RunService").RenderStepped:wait()
+        
+        game.ReplicatedStorage.RemoteEvent:FireServer({"+FS5"})
+        game:GetService("RunService").RenderStepped:wait()
+end
+ 	    end)
+ 	local trainingButton = trainingSection:NewButton("Fist 10T+",  UISetting, function()
+ 	           _G.on = 1
+    while _G.on == 1
+    do game:GetService("RunService").RenderStepped:wait()
+        
+        game.ReplicatedStorage.RemoteEvent:FireServer({"+FS6"})
+        game:GetService("RunService").RenderStepped:wait()
+end
+ 	    end)
+ 	 	local trainingButton = trainingSection:NewButton("Off Training Fist",  UISetting, function()
+ 	           _G.on = 0
+    while _G.on == 1
+    do game:GetService("RunService").RenderStepped:wait()
+        
+        game.ReplicatedStorage.RemoteEvent:FireServer({"+FS3"})
+        game:GetService("RunService").RenderStepped:wait()
+end
+ 	    end)
+ 	    local adminButton = adminSection:NewButton("CMD-X",  UISetting, function()
+ 	    	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+ 	    end)
+ 	    local freeButton = freeSection:NewButton("Anti [B/F] On",  UISetting, function()
+ 	     _G.on = true
+    while _G.on == true
+    do
+
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight1"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight2"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight3"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight4"})
+        game:GetService("RunService").RenderStepped:wait()
+    end
+ 	    end)
+ 	    local freeButton = freeSection:NewButton("Anti [B/F] Off",  UISetting, function()
+ 	     _G.on = false
+    while _G.on == true
+    do
+
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight1"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight2"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight3"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight4"})
+        game:GetService("RunService").RenderStepped:wait()
+    end
+ 	    end)
+ 	    local freeButton = freeSection:NewButton("Black Maps [by.Yukii]",  UISetting, function()
+ 	    	if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+if game.PlaceId == 2202352383 then
+    for i, v in pairs(workspace.Main.Waterfall:GetDescendants()) do
+        if v:IsA("Part") or v:IsA("Mesh") or v:IsA("BasePart") then
+            if v.Color == Color3.fromRGB(128, 187, 219) or v.Transparency == 0.5 or v.Color == Color3.fromRGB(17, 17, 17) then
+                v.Color = Color3.fromRGB(17, 17, 17)
+            else
+                v.Color = Color3.fromRGB(66, 66, 66)
+            end
+            if v.ClassName == "UnionOperation" then v.UsePartColor = true end
+        end
+    end
+    for i, v in pairs(workspace.Main.Waterfall:GetChildren()) do
+        if v.Name == "Waterfall" then
+            v:Destroy()
+        end
+    end
+    workspace.Terrain.WaterColor = Color3.fromRGB(17, 17, 17)
+    workspace.Terrain.WaterTransparency = 0.5
+    workspace.Terrain.WaterReflectance = 0
+    for i, v in pairs(workspace.Main.OceanFloor:GetChildren()) do
+        v.Color = Color3.fromRGB(17, 17, 17)
+    end
+    for i, v in pairs(workspace.Main.WaterWalkFloor:GetChildren()) do
+        v.Color = Color3.fromRGB(17, 17, 17)
+    end
+    for s, a in pairs({1, 2, 3}) do
+        for i, v in pairs(workspace.Town.Color["Tree"..s].Leaf:GetChildren()) do
+            v.Color = Color3.fromRGB(s*10, s*10, s*10)
+        end
+        for i, v in pairs(workspace.Town.Color["Tree"..s].Trunk:GetChildren()) do
+            v.Color = Color3.fromRGB(160, 160, 160)
+        end
+    end
+    for i, v in pairs(workspace.Town.Color.Floor:GetChildren()) do
+        v.Color = Color3.fromRGB(88, 88, 88)
+    end
+    for i, v in pairs(workspace.Town.Core:GetDescendants()) do
+        if v:IsA("SpotLight") then
+            v.Color = Color3.fromRGB(120, 0, 255)
+            v:GetPropertyChangedSignal("Color"):Connect(function() v.Color = Color3.fromRGB(120, 0, 255) end)
+        end
+    end
+    local Players = game:GetService("Players")
+    local Player = Players.LocalPlayer
+    local PlayerGui = Player:WaitForChild("PlayerGui")
+    local BubbleChatUI = PlayerGui:WaitForChild("BubbleChat")
+    BubbleChatUI.DescendantAdded:Connect(function(Descendant)
+    if Descendant:IsA("ImageLabel") then
+            Descendant.ImageColor3 = Color3.fromRGB(59, 59, 59)
+        elseif Descendant:IsA("TextLabel") then
+            Descendant.TextColor3 = Color3.new(1,1,1)
+        end
+    end)
+    if game.Lighting:FindFirstChild("SunRays") then game.Lighting.SunRays:Destroy() end
+    local Skybox = Instance.new("Sky", game.Lighting)
+    Skybox.SkyboxBk = "http://www.roblox.com/asset/?id=159454299"
+    Skybox.SkyboxDn = "http://www.roblox.com/asset/?id=159454296"
+    Skybox.SkyboxFt = "http://www.roblox.com/asset/?id=159454293"
+    Skybox.SkyboxLf = "http://www.roblox.com/asset/?id=159454286"
+    Skybox.SkyboxRt = "http://www.roblox.com/asset/?id=159454300"
+    Skybox.SkyboxUp = "http://www.roblox.com/asset/?id=159454288"
+    Skybox.CelestialBodiesShown = false
+    game.Lighting:GetPropertyChangedSignal("TimeOfDay"):Connect(function() game.Lighting.TimeOfDay = 7 end)
+end
+ 	    end)
+    end
